@@ -5,21 +5,28 @@
 			<meta charset="UTF-8">
 			<!--Tools: we'll be using a basic CSS file for some styling on the button. And JQuery, with some Javascript.. These are stored locally!
 			-->
+			<script src="http://code.jquery.com/jquery.min.js"></script>
 			<script type= "text/javascript" src= "javascript/app.js"></script>
-			<script type= "text/javascript" src= "javascript/jquery.js"></script>
 			<link rel="stylesheet" type="text/css" href="css/stylez.css">
 			<!--Fonts: This will be applied to the button. Nothing major.
 			-->
 			<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 
 </head>
+	<div class = "contentFizz">
+		<h1 class = "headerstyle">The Fizzbuzz game, enter your number, and i'll recreate the <a href="https://en.wikipedia.org/wiki/Fizz_buzz">FizzBuzz</a> game for you.
+		</h1><br>
+		Every divisble number by 3 will print <b>'Fizz!'</b><br> 
+		Every divisble number by 5.. Will print <b>'Buzz!'</b>.</br>
+		Every divisble number from 3 and 5, will print <b>'FIZZBUZZ!'</b>
 	<form action="#">
  		<fieldset>
- 			<input id="fizzNumber" type="text" placeholder="Enter number here..." />
+ 			<input id="fizzNumber" type="text" placeholder="Enter your number.." />
  			<input id="submit" type="submit" />
- 			<span style="color:blue; "></span>
+ 			<span style="color:blue;"></span>
  		</fieldset>
  	</form>
-	<section></section>
+	<ul></ul>
+</div>
 	</body>
 </html>

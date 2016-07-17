@@ -18,17 +18,21 @@ $(document).ready(function(){
 	});
 });
 
-function fizzBuzz(){
-	for(i = 0; i <= 100; i++){
+//This will print the results in the locations we've called it in the function above.
+//Which is our unordered list.
+
+function fizzBuzz(answer){
+	for(i = 0; i <= answer; i++){
 		if(i % 3===0 && i % 5===0){
-			console.log("Fizzbuzz!");
+			$('ul').append('Fizzbuzz!');
 		}else if(i % 3===0){
-			console.log("Fizz!");
+			$('ul').append('Fizz!');
 		}else if(i % 5===0){
-			console.log("Buzz!");
+			$('ul').append('Buzz!');
 		}else{
-			console.log(i);
+			$('ul').append(i);
 		}
+		$('ul').append('<br/>');
 	}
 }
 fizzBuzz();
